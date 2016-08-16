@@ -1,0 +1,22 @@
+program readIntp(){
+    int n = 0, flag = 0, i=0;
+    byte b;
+    loop
+    {
+        b = readChar();
+        if(i==0 and b=='-'){
+            flag=1;
+        }
+        else if ( b < '0' or b > '9' )
+        {
+           break;
+        }
+        else
+           n = 10*n+(b-'0');
+        i=i+1;
+    }
+    if(flag==1)
+        n=-1*n;
+
+    printInt(n);
+}

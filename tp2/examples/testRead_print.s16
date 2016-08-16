@@ -1,0 +1,12 @@
+program test(){
+	int n;
+	float i=0;
+	loop{
+		n=readInt();
+		printInt(n);
+		printStr("");
+		i=i+1;
+		if(i==5) break;
+	}
+	printInt(n);
+}

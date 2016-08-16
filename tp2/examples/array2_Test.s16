@@ -1,0 +1,45 @@
+program array2_Test2()
+{
+	int n,a;
+	int i = 0;
+	int sum = 0; 
+	printStr("Enter number of students: ");
+	n = readInt();
+
+	int notas[10];
+	loop
+	{	
+
+		if (i < n)
+		{
+			printStr("Enter mark of student ");
+			printInt(i);
+			printStr(":");
+			notas[i] = readInt();
+			i = i+1;
+		}
+		else
+		{
+			break;
+		}
+	}
+
+	i = 0;
+
+	loop
+	{	
+
+		if (i < n)
+		{
+			sum = sum + notas[i];
+			i = i+1;
+		}
+		else
+		{
+			break;
+		}
+	}
+
+	printStr("Soma total das notas = ");
+	printInt(sum);
+}

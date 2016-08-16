@@ -1,0 +1,45 @@
+program relop_3(){
+
+	float f = 2.1;
+	float b = 2.3;
+
+	if(f==b){
+		printStr("Fail");
+	}
+	else{
+		printStr("Test1");
+	}
+	
+	if(f!=b){
+		printStr("Test2");
+	}
+	else{
+		printStr("Fail");
+	}
+
+	if(f>=b){
+		printStr("Fail");
+	}
+	else{
+		printStr("Test3");
+	}
+	if(2.1<=6.8){
+		printStr("Test4");
+	}
+	else{
+		printStr("Fail");
+	}
+	if(1.8>9.2){
+		printStr("Fail");
+	}
+	else{
+		printStr("Test5");
+	}
+	if(1.9<6.3){
+		printStr("Test6");
+	}
+	else{
+		printStr("Fail");
+	}
+
+}

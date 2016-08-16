@@ -1,0 +1,28 @@
+program yetAnotherTest(){
+	int a, b=2, c;
+
+	a=1;
+	c=3;
+	printInt(a);
+	printInt(b);
+	printInt(c);
+
+	a = -1;
+	c = c+a;
+	printInt(c);
+
+	float f = -5.1;
+	c = f+10;
+	printInt(c);
+
+	printInt(2+3.1*5/2);
+
+	float f2 = (int) 2.9;
+	printInt(f2+0.1);
+	
+	f2 = 2.9;
+	printInt(f2+0.1);
+
+	printInt(-52);
+
+}

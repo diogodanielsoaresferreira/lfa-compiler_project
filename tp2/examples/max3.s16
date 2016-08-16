@@ -1,0 +1,46 @@
+program MAX(){
+	/* ask for number of numbers */
+    printStr("How many numbers? ");
+    int n;
+    n = readInt();
+    if ( n > 10 ) {
+        printStr("Bad number of numbers, aborting\n");
+        exit();
+    }
+
+    /* read array values */
+    int in[10];
+    int i;
+    loop
+    {
+        in[i] = readInt();
+        i = i + 1;
+        if ( i == n) break;
+    }
+
+    /* compute max */
+    int max;
+    max = in[0];
+    i = 1;
+    loop
+    {
+        if ( in[i] > max ) max = in[i];
+        i = i + 1;
+        if ( i == n ) break;
+    }
+
+    /* print results */
+    printStr("Max of {");
+    printInt(in[0]);
+    i = 1;
+    loop {
+        printStr(", ");
+        printInt(in[i]);
+        i = i + 1;
+        if ( i == n ) break;
+    }
+    printStr("} is ");
+    printInt(max);
+    printStr("\n");
+    exit();
+}

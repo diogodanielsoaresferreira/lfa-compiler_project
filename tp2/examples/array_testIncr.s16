@@ -1,0 +1,14 @@
+program array_testIncr(){
+  int array[] = {1, 5, 8, 4};
+
+  int i = -1;
+  loop{
+    if(i>=3) break;
+    printInt(array[i++]);
+    printStr("");
+  }
+
+  int x = 3;
+  x *= array[i--];
+  printInt(x);
+}

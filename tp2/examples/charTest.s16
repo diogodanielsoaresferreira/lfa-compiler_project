@@ -1,0 +1,47 @@
+program char_test(){
+	byte a = 2, c='c', d;
+	int b = 2;
+	d = 3;
+	printStr("INT");
+	printInt(b);
+	printStr("BYTE");
+	printInt(a);
+	d = 'd';
+	printChar(d);
+
+	float f = 2, d2;
+	printInt(f);
+	f=2.2;
+	printInt(f);
+
+
+
+	printStr("Byte");
+	
+	d = 2.2;
+	printInt(d);
+
+	printStr("");
+	printStr("");
+	printStr("");
+
+	byte b1[] = {2.1,3,3.6};
+	byte b2[3];
+	int i=0;
+	loop{
+		b2[i] = b1[i];
+		printInt(b1[i]);
+		i=i+1;
+		if(i==3) break;
+	}
+
+	byte bover = 256;
+	printInt(bover);
+
+	int b_over = 257;
+	printStr("With Overflow");
+	printInt((byte)b_over);
+	printStr("Without Overflow");
+	printInt(b_over);
+
+}

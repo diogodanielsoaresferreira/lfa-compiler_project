@@ -1,0 +1,41 @@
+program Fibonnaci ()
+{	
+	int n;
+	int first;
+	int second;
+	int next;
+	int tmp;
+
+	first = 0;
+	second = 1;
+	tmp = 0;
+	printStr("Program to test Fibonnaci numbers");
+	printStr("What Number? ");
+	n = readInt();
+
+	tmp = n;
+	if (n < 0)
+	{
+		printStr("Number must be bigger than zero");
+		printStr("Program will end now");
+		exit();
+	}
+
+	loop
+	{
+		if (tmp <= 0)
+		{
+	   	 	printStr("Fibonnaci = ");
+	   	 	printInt(next);
+	   		exit();
+		}
+		else
+		{
+			next = first + second;
+			first = second;
+			second = next;
+			tmp = tmp - 1;
+		}
+	}
+	exit();
+}

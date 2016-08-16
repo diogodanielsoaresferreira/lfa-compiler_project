@@ -1,0 +1,10 @@
+program readTest(){
+	int n = readInt();
+	printInt(n);
+
+	printInt(readInt());
+	n = readInt();
+	printInt(n);
+	n = readInt();
+	printInt(n);
+}

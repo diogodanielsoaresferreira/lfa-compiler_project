@@ -1,0 +1,28 @@
+program sym_table_tree(){
+
+	int i=0, b=2, c=3;
+
+	loop{
+		int a=1;
+		i=i+1;
+		if(i==5) break;
+		printInt(i);
+	}
+	printStr("Parte 2");
+	
+	if(b==2){
+		int array[] = {1,2,3,4,5};
+		int idx=0;
+		loop{
+			printStr("ARRAY");
+			printInt(array[idx]);
+			printStr("IDX");
+			idx += 1;
+			if(idx==5) break;
+			printInt(idx);
+			i++;
+		}
+	}
+
+
+}

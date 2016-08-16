@@ -1,0 +1,8 @@
+program ass_test(){
+	int a,b,c;
+	a=1, b=2, c=3;
+
+	printInt(a);
+	printInt(b);
+	printInt(c);
+}

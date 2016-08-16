@@ -1,0 +1,41 @@
+program main()
+{
+   int n, i = 3, count, c;
+ 
+   printStr("Enter the number of prime numbers required");
+   printStr("");
+   n = readInt();
+   printStr("");
+ 
+   if ( n >= 1 )
+   {
+      printStr("First ");
+      printInt(n); 
+      printStr(" prime numbers are :");
+      printInt(2);
+      printStr("");
+   }
+   count=2;
+   loop
+   {
+      c=2;
+      loop
+      {
+         if ( i%c == 0 )
+            break;
+         c++;
+         if(c==i) break;
+      }
+      if ( c == i )
+      {
+         printInt(i);
+         printStr("");
+         count++;
+      }
+      i++;
+      if(count>n)
+         break;
+   }
+ 
+   exit();
+}

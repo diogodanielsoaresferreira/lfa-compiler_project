@@ -1,0 +1,25 @@
+program test(){
+    
+	int n = -625, r;
+	int buf[6];
+    int i = 5;
+    if(n<0){
+        printChar('-');
+        n=-n;
+    }
+    loop
+    {
+        r = n % 10;
+        buf[i] = r;
+        n = n / 10;
+        if ( n == 0 ) break;
+        i=i-1;
+    }
+    
+    loop{
+    	if(i==6)
+    		break;
+    	printInt(buf[i]);
+    	i=i+1;
+    }
+}

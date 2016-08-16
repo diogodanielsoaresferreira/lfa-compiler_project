@@ -1,0 +1,26 @@
+program operator_andEqual(){
+  int i = 12;
+  float f = 2;
+  i += 2;
+  printInt(i);
+  printStr("");
+  i -= 4;
+  printInt(i);
+  printStr("");
+  i *= 2;
+  printInt(i);
+  printStr("");
+  i /= 4;
+  printInt(i);
+  printStr("");
+  i %= 5;
+  printInt(0);
+  printStr("");
+  i++;
+  printInt(i);
+  printStr("");
+  printInt(i++);
+  printStr("");
+  f+=3.5;
+  printInt(f);
+}

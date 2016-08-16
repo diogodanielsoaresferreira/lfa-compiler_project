@@ -1,0 +1,32 @@
+program prof_test()
+{
+	printStr("Introduza um inteiro: ");
+	int a = readInt();
+
+	byte x = -'a';
+	int hex = -0x1234;
+
+	int soma = a + x; 
+	int soma1 = a + soma;
+	int dif = a - soma1;
+	x = 2 + x;
+
+	byte letras[] = {'A','V','E','I','R','O'};
+	int i = 0;
+
+	loop
+	{	
+		if (i < 6)
+		{
+			float f = soma1+soma;
+			printChar(letras[i]);
+			i = i + 1;
+		}
+		else
+		{
+			break;
+		}	
+	}
+
+	
+}

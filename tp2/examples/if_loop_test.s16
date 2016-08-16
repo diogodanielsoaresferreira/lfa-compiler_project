@@ -1,0 +1,124 @@
+program if_loop_test (){
+	int i = 0;
+	int n = 1;
+
+	if(n==1){
+		printStr("Certo");
+	}
+	else{
+		printStr("Errado");
+	}
+
+	loop{
+		printStr("Loop");
+		if(i==5){
+			printStr("Break");
+			break;
+		}
+		else{
+			printStr("ELSE");
+			i = i + 1;
+		}
+	}
+
+	i = 0;
+	loop{
+		printStr("Loop");
+		if(i==5){
+			printStr("Break");
+			break;
+		}
+		else{
+			printStr("ELSE");
+			i = i + 1;
+		}
+	}
+
+	i = 0;
+	loop{
+		printStr("Loop");
+		if(i==5){
+			printStr("Break");
+			break;
+		}
+		else{
+			printStr("ELSE");
+			i = i + 1;
+		}
+	}
+
+	i = 0;
+	loop{
+		loop{
+			loop{
+				i = i+1;
+				printInt(i);
+				if(i==5)
+					break;
+			}
+			printStr("LOOP1");
+			break;
+		}
+		printStr("Loop3");
+		break;
+	}
+
+
+
+	if(n==1 and i==0){
+		printStr("NO");
+	}
+	else if(n==1 and i==5){
+		printStr("YES");
+	}
+	if(n==0 or i==5){
+		printStr("Y");
+	}
+
+	if(i>=n){
+		printStr("Y2");
+	}
+	if(n!=i){
+		printStr("y3");
+	}
+	if(i<=n){
+		printStr("N");
+	}
+	else if(1<=1){
+			printStr("True");
+		if(2<=1){
+			printStr("False");
+		}
+		else{
+			printStr("Still true");
+		}
+	}
+
+	i = 0;
+	break; // Não faz nada
+	break;
+	break;
+	loop{
+		printInt(i);
+		i=i+1;
+		if(i>=5)
+			break;
+	}
+	int k = 0;
+	loop{
+		k = k+1;
+		printInt(k);
+		if(k==5)
+			break;
+		i = 0;
+		loop{
+			i = i+1;
+			printStr("Inner Loop");
+			if(i==2)
+				break;
+		}
+	}
+
+	break; //Não faz nada
+
+}

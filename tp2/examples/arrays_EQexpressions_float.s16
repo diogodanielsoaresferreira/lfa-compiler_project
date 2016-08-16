@@ -1,0 +1,19 @@
+program arrays_EQexpressions_float(){
+  float array[] = {3.4, 5.1, 7.03, 8.01, 12.12};
+
+  float x = 7.8;
+
+  array[0]+=4.2*x;
+  array[1]-=6.3+x;
+  array[2]*=3.003+x;
+  array[3]/=2.2-x;
+  array[4]%=6.05*x;
+
+  int i = 0;
+  loop{
+    if(i>=5) break;
+    printInt(array[i]);
+    printStr("");
+    i++;
+  }
+}

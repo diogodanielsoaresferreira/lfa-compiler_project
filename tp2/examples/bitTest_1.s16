@@ -1,0 +1,18 @@
+program bitTest(){
+	int a=1;
+	int c;
+	a=a<<1;
+	printInt(a);
+	a=a<<1;
+	printInt(a);
+	a=a>>1;
+	int b = 2;
+	c=b|a;
+	printInt(c);
+	c=b^a;
+	printInt(c);
+	c=a&b;
+	printInt(c);
+	c=~a;
+	printInt(c);
+}

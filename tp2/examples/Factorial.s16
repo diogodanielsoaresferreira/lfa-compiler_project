@@ -1,0 +1,36 @@
+program Factorial()
+{	
+	int i;
+	int n;
+	int fact;
+	fact = 1;
+
+	printStr("Enter a number to calculate it's factorial: ");
+	n = readInt();
+
+	if (n < 0)
+	{
+		printStr("Number must be bigger than zero\n");
+		printStr("Program will end now\n");
+		exit();
+	}
+
+	i = 1;
+
+	loop
+	{
+		if (i > n)
+		{
+			break;
+		}
+		else
+		{
+			fact = fact * i;
+			i = i + 1;
+		}
+	}
+	printStr("Factorial = ");
+	printInt(fact);
+
+	exit();
+}

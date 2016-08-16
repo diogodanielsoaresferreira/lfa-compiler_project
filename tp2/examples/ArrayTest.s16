@@ -1,0 +1,6 @@
+program ArrayTest(){
+	int array[2], i=4, array2[5], j=3, [4]decl_contrario, []again_ao_contrario={1,2,3};
+
+	float array3[]={1.2,1.5,2};
+
+}

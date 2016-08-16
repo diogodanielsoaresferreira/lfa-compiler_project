@@ -1,0 +1,62 @@
+program teste(){
+	// Projeto
+	/* Lfa */
+	//Tudo o que está comentado, quando descomentado deve dar erro,
+	int c;
+	int a = 2*3.2;
+	float b = 2;
+	string str = "antonio" ;
+	printInt(2.1);
+	if(a<2);
+	if(a<2 and 5<4){
+		//int c=2;
+		//a = 5;
+	}
+	else{
+		//float c = 4;
+		//c=4;
+		// if 1{
+		//if (1){
+		if(a<2){
+			//byte a=3;
+			a=3;
+			b = 3;
+		}
+	}
+	loop{
+		a=2;
+		break;
+	}
+	/*
+	  if(2==4){
+		printStr("ERROR");
+	  }
+	*/
+
+	//else{
+	//	printInt(1);
+	//}
+
+	//int a = 2+3*5 and 2;
+	//int a = 2+3*5;
+	int f12R = 2+3*5;
+	//str = "ANT";
+
+	break;
+
+	if(a<=5 and a!=0 or a>1){
+		printStr("1");
+	}
+	//a = 1 <= 5;
+	a = 2%4;
+	//df=4;
+
+	printChar('1');
+	printInt(2);
+	printStr("abc");
+	//str = 2;
+	int n,e=1,r=2;
+	n=4%5;
+	exit();
+	break;
+}

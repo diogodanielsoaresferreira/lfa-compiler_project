@@ -1,0 +1,9 @@
+program s16(){
+	int n = 5;
+	int j = 2;
+
+	float b = n + j;
+	float c = 2 + 3.1;
+	j = 4/2.1;
+	j = b%c;
+}

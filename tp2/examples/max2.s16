@@ -1,0 +1,51 @@
+/* Programa escrito em S16/N2 */
+
+program MAX ()
+{
+    /* ask for number of numbers */
+    string s1 = "How many numbers? ";
+    printStr(s1);
+    int n;
+    n = readInt();
+    if ( n > 10 or n < 1 ) {
+        printStr("Bad number of numbers, aborting\n");
+        exit();
+    }
+
+    /* read values */
+    int[10] in;
+    int i;
+    loop
+    {
+        in[i] = readInt();
+        i = i + 1;
+        if ( i == 10) break;
+    }
+
+    /* compute max */
+    int max;
+    max = in[0];
+    i = 1;
+    loop
+    {
+        if ( in[i] > max ) max = in[i];
+        i = i + 1;
+        if ( i == n ) break;
+    }
+
+    /* print results */
+    printStr("Max of {");
+    printInt(in[0]);
+    i = 1;
+    loop {
+        printStr(", ");
+        printInt(in[i]);
+        i = i + 1;
+        if ( i == n ) break;
+    }
+    printStr("} is ");
+    printInt(max);
+    printStr("\n");
+    exit();
+}
+

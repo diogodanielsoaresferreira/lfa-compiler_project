@@ -1,0 +1,102 @@
+program op_test(){
+	
+	printStr("Somar");
+
+	int n = 2 + 1;
+	printInt(n);
+
+	n = 4.5 + 1.3;
+	printInt(n);
+
+	float f;
+
+	n = 4.5 + 4;
+	printInt(n);
+
+	f = n + 3.4;
+	printInt(f);
+
+	f = 4.7 + 1.8;
+	printInt(f);
+
+	f = n;
+	printInt(f);
+
+	f = 6.9;
+	n = f;
+	printInt(f);
+
+	printStr("Subtrair");
+
+	n = 2 - 1;
+	printInt(n);
+
+	n = 4.5 - 1.3;
+	printInt(n);
+
+	n = 4.5 - 4;
+	printInt(n);
+
+	n = 5;
+
+	f = n - 3.4;
+	printInt(f);
+
+	f = 4.7 - 1.8;
+	printInt(f);
+
+	printStr("Dividir");
+
+	n = 2 / 1;
+	printInt(n);
+
+	n = 4.5 / 1.3;
+	printInt(n);
+
+	n = 4.5 / 4;
+	printInt(n);
+
+	f = n / 3.4;
+	printInt(f);
+
+	f = 4.7 / 1.8;
+	printInt(f);
+
+	printStr("Multiplicar");
+
+	n = 2 * 1;
+	printInt(n);
+
+	n = 4.5 * 1.3;
+	printInt(n);
+
+	n = 4.5 * 4;
+	printInt(n);
+
+	f = n * 3.4;
+	printInt(f);
+
+	f = 4.7 * 1.8;
+	printInt(f);
+
+	printStr("Resto");
+
+	n = 1 % 2;
+	printInt(n);
+
+	n = 4.5 % 1.3;
+	printInt(n);
+
+	n = 4 % 3;
+	printInt(n);
+
+	f = n % 3.4;
+	printInt(f);
+
+	f = 4.7 % 1.8;
+	printInt(f);
+
+
+
+
+}

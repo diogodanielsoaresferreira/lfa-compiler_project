@@ -1,0 +1,63 @@
+program op_relop_test2(){
+
+
+	int n=2;
+	int i=1;
+	int k=0;
+
+	if(not(i==1))
+		printStr("Fail");
+	else
+		printStr("Teste 0");
+
+	if(n>=1 and k<=0){
+		printStr("Teste 1");
+	}
+	else{
+		printStr("Fail");
+	}
+
+	if(n!=3 and n==2){
+		printStr("Teste 2");
+	}
+	else{
+		printStr("Fail");
+	}
+
+	if(k==1 or n<=2){
+		printStr("Teste 3");
+	}
+	else{
+		printStr("Fail");
+	}
+
+	if(not (k==1))
+		printStr("Teste 4");
+	else
+		printStr("Fail");
+
+	if((not k==0) xor (n!=2 and n!=1)){
+		printStr("Fail");
+	}
+	else
+		printStr("Teste 5");
+
+
+	if((not k==1) xor (n!=2 and n!=1)){
+		printStr("Teste 6");
+	}
+	else
+		printStr("Fail");
+
+	if(n>1 and i>0 and k>-1)
+		printStr("Teste 7");
+	else
+		printStr("Fail");
+
+	if(((n==1) and (n==2)) or ((i==0) and (i>1))){
+		printStr("Fail");
+	}
+	else
+		printStr("Teste 8");
+
+}

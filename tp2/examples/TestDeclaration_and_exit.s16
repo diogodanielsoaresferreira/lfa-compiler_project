@@ -1,0 +1,32 @@
+program Declarations(){
+	
+	int n = 2;
+	int j = 4;
+
+	float f1 = 5.25;
+	float f2 = 4.5;
+
+	j = f1;
+
+	f2 = n;
+
+	string s1 = "abc";
+	string s2 = "Projeto 2";
+
+	//s2 = "LFA"; Não funciona
+
+	printInt(n);
+	printInt(j);
+	printInt(f1);
+	printInt(f2);
+	printStr(s1);
+	printStr(s2);
+	
+
+	printStr("A; 566");
+	printChar('a');
+	printInt(655369);
+	exit();
+
+
+}

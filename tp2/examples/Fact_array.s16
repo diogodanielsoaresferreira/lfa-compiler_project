@@ -1,0 +1,30 @@
+program Factorial_array()
+{	
+
+	int i, j;
+	int fact[10];
+	fact[0] = 1;
+
+	printStr("Factorial of 1 to 10");
+	
+
+	i = 1;
+	printStr(":");
+	printInt(fact[0]);
+	loop
+	{
+		if (i>=10)
+		{
+			break;
+		}
+		else
+		{
+			printStr(":");
+			fact[i]=fact[i-1]*i;
+			printInt(fact[i]);
+			i = i+1;
+		}
+	}
+
+	exit();
+}

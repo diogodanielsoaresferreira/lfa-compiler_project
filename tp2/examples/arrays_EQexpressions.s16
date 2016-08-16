@@ -1,0 +1,17 @@
+program arrays_EQexpressions(){
+  int array[] = {3, 5, 7, 8, 12};
+
+  array[0]+=4;
+  array[1]-=6;
+  array[2]*=3;
+  array[3]/=2;
+  array[4]%=6;
+
+  int i = 0;
+  loop{
+    if(i>=5) break;
+    printInt(array[i]);
+    printStr("");
+    i++;
+  }
+}

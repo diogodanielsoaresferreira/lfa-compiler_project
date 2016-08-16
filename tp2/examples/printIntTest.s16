@@ -1,0 +1,11 @@
+program test(){
+	printStr("cenas");
+	printStr("");
+	printInt(-10);
+	printStr("");
+	printInt(20);
+	printStr("");
+	printInt(-6991);
+	printStr("");
+	printInt(readInt());
+}

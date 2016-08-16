@@ -1,0 +1,41 @@
+program SelectionSortFloat(){
+    float array[] = {47.96, 46.071, 47.1, 47.45, 45.99, 46.765, 47.543, 45.234, 3.346};
+    int min = 0;
+    float ismin = 0.0;
+    int i = 0;
+    int j = 0;
+
+    loop{
+      if(i>=9) break;
+
+      min = i;
+      ismin = 0;
+      j = i+1;
+      
+      loop{
+        if(j>=9) break;
+        if(array[j]<array[min]){
+          min = j;
+          ismin = 1;
+        }
+        j = j+1;
+      }
+      if(ismin==1){
+        float temp=0;
+        temp = array[i];
+        array[i]=array[min];
+        array[min]=temp;
+      }
+      i = i+1;
+    }
+
+    i = 0;
+    loop{
+      if(i>=9) break;
+      int tmp = (int) array[i];
+      printInt(tmp);
+      printStr(" ");
+      i = i+1;
+    }
+}
+

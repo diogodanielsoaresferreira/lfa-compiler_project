@@ -1,0 +1,56 @@
+procedure p2(){
+	int c4 = -6;
+	byte c5 = -4;
+
+	printStr("R:24");
+	printInt(c4*c5);
+
+	printStr("-1");
+	float f6 = 2.5;
+	printInt(c5/f6);
+}
+
+program test99(){
+	p2();
+	int a = -2;
+	a = 2e5;
+	a = 2e5-4;
+	a = 0xf;
+	a = -0xf;
+
+	printStr("R:-15");
+	printInt(a);
+
+	printStr("R:97");
+	byte b = 'a';
+	printInt(b);
+
+	printStr("R:-97");
+	printInt(-b);
+
+	printStr("R:82");
+	printInt(a+b);
+
+	byte c = -'a';
+	int i1 = -10;
+
+	printStr("R:-97");
+	printInt(c);
+	printStr("R:-10");
+	printInt(i1);
+
+	//i1=2, a=3;
+	i1=2;
+	a=3;
+	printStr("R:5");
+	printInt(i1+a);
+
+	float f=5.4;
+	printStr("R:7");
+	printInt(f+i1);
+
+	int n = 2.4;
+	float f2 = 3;
+	printStr("R:5");
+	printInt(f2+n);
+}

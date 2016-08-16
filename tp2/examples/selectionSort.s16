@@ -1,0 +1,39 @@
+program SelectionSort(){
+	int array[] = {47, 28, 31, 96, 85, 41, 66, 80, 0};
+  int min = 0;
+  int ismin = 0;
+  int i = 0;
+  int j = 0;
+
+  loop{
+    if(i>=9) break;
+
+    min = i;
+    ismin = 0;
+    j = i+1;
+    
+    loop{
+      if(j>=9) break;
+      if(array[j]<array[min]){
+        min = j;
+        ismin = 1;
+      }
+      j = j+1;
+    }
+    if(ismin==1){
+      int temp=0;
+      temp = array[i];
+      array[i]=array[min];
+      array[min]=temp;
+    }
+    i = i+1;
+  }
+
+  i = 0;
+  loop{
+    if(i>=9) break;
+    printInt(array[i]);
+    i = i+1;
+  }
+
+}

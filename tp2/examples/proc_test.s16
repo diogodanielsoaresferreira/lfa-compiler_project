@@ -1,0 +1,9 @@
+procedure test(){
+	printStr("P1");
+}
+
+program nothing(){
+	int a = 2;
+	test();
+	printInt(a);
+}

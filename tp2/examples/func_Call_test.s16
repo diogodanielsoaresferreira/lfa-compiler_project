@@ -1,0 +1,11 @@
+program func_call_test(){
+
+	int n = readInt();
+
+	printInt(n);
+
+	int j = n - 1;
+	printInt(j);
+
+
+}

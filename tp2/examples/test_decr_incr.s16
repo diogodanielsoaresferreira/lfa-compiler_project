@@ -1,0 +1,18 @@
+program test_decr_incr(){
+  int i=1,j=2;
+  int array[] = {1,2,3};
+  array[0]--;
+  printInt(array[0]);
+  array[0]++;
+  printInt(array[0]);
+
+  printInt(array[1]++);
+  printInt(array[2]--);
+
+  printInt(i+++j);
+
+  float f = 5.3;
+  f--;
+  printInt(f);
+
+}
